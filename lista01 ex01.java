@@ -1,6 +1,9 @@
 public class Pilha {	    
     public Object[] pilha;
     public int posicaoPilha;
+    public string operacao;
+    public string descricao;
+    public method ref;
 
     public Pilha() {
         this.posicaoPilha = -1;
@@ -14,9 +17,12 @@ public boolean pilhaVazia() {
 	return false;
 }
 
-public void empilhar(Object valor) {        
+public void empilhar(Object valor, string operacao, string descricao, method ref) {        
 	if (this. posicaoPilha < this.pilha.length - 1) { 	
-		this.pilha[++posicaoPilha] = valor;
+		this.pilha.object[++posicaoPilha] = valor;
+		this.pilha.operacao[++posicaoPilha] = operacao;
+		this.pilha.descricao[++posicaoPilha] = descricao;
+		this.pilha.ref[++posicaoPilha] = ref;
 	}
 }
 
